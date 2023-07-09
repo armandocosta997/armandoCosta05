@@ -8,6 +8,8 @@ TagManager:
   - SolidRock
   - Enemy
   - BoundaryRight
+  - EnemyProjectile
+  - BoundaryLeft
   layers:
   - Default
   - TransparentFX

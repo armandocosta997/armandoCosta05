@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed =1;
     public float vInput;
     Animator myAnimator;
+    public GameManagerScript gameManager;
 
     // Start is called before the first frame update
     void Start()
@@ -31,7 +32,11 @@ public class PlayerController : MonoBehaviour
     {
         if(collision.gameObject.tag == "EnemyProjectile" || collision.gameObject.tag == "Enemy" ) {
             myAnimator.SetTrigger("Hit");
+            Debug.Log("lost");
+            gameManager.gameOver();
         }
+
+
     
 }
 }
